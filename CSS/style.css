@@ -1,0 +1,54 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+.container {
+    background-color: black;
+    width: auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+}
+.center {
+    height: 200px;
+    width: 300px;
+    position: relative;
+    margin: 0%;
+    border: 8px solid red ;
+    background: black;
+    justify-content: center;
+    align-items: center;
+    line-height: 200px;
+    z-index: 0;
+}
+.center ::before,.center ::after {
+    content: '';
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+
+}
+.center ::before {
+    content: '';
+    height: 250px;
+    width: 120px;
+    top: -0.5em;
+    bottom: -0.5em;
+    z-index: -100;
+}
+.center ::after {
+    content: '';
+    height: 100px;
+    width: 400px;
+    top: 2.5em;
+    left: -8em;
+    z-index: -100;
+}
+.center h3 {
+    z-index: 500;
+    color: red;
+    position: absolute;
+    right: 35%;
+}
